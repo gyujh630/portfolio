@@ -105,7 +105,6 @@ p {
 
 .navbar__menu {
     display: flex;
-
 }
 
 .navbar__menu__item {
@@ -121,9 +120,48 @@ p {
 }
 
 .navbar__logo {
-    font-size: var(--font-medium);
-    font-weight: var(--weight-semi-bold);
-    color: var(--color-dark-grey);
+    transition: 300ms;
+}
+
+.navbar__logo:hover {
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotateZ(0.5deg);
+    }
+    10% {
+        transform: translateX(-2px) rotateZ(-1.2deg);
+    }
+    20% {
+        transform: translateY(3px) rotateZ(1deg);
+    }
+    30% {
+        transform: translateY(-1px) rotateZ(-1deg);
+    }
+    40% {
+        transform: translateX(3px) rotateZ(1deg);
+    }
+    50% {
+        transform: translateY(-3x) rotateZ(-1.1deg);
+    }
+    60% {
+        transform: translateY(2px) rotateZ(1deg);
+    }
+    70% {
+        transform: translateX(-1px) rotateZ(-1.1deg);
+    }
+    80% {
+        transform: translateY(1px) rotateZ(1.1deg);
+    }
+    90% {
+        transform: translateY(-1px) rotateZ(-1.2eg);
+    }
+    100% {
+        transform: translateX(0) rotateZ(deg);
+    }
 }
 
 .navbar__menu__item:hover {
