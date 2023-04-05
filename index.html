@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
     <title>GYUJEONG's Portfolio</title>
     <meta name="description" content="Portfolio for software engineer">
     <meta name="author" content="GYUJEONG HAN">
-    <link rel="icon" type = "image/png" href="imgs/favicon.png">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
 
     <script src="https://kit.fontawesome.com/c353010116.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="navbar">
@@ -32,51 +33,49 @@
             <li class="navbar__menu__item">Testimonial</li>
             <li class="navbar__menu__item">Contact</li>
         </ul>
-        
+
     </nav>
 
     <!-- Home -->
     <section id="home">
-        <img
-            src="imgs/home-profile.jpg"
-            alt="GYUJEONG's profile photo"
-            class="home_avatar"
-
-            height=auto
-        />
+        <img src="imgs/home-profile.jpg" alt="GYUJEONG's profile photo" class="home_avatar" height=auto />
         <h1 class="home__title">Hello,<br />I'm GYUJEONG HAN.</h1>
         <h2 class="home__desciption">Software Engineer</h2>
         <button class="home__contact">Contact Me</button>
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
-        <p>아주대학교에서 디지털미디어와 소프트웨어를 전공하고 있습니다.</p>
+        <p>I'm majoring in Digital-Media and Software at Ajou University.</p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">HTML, CSS, JavaScript</div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">HTML<br> CSS<br>JavaScript</div>
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+                    <i class="fa-solid fa-mobile"></i>
                 </div>
-                <div class="major__title">Moblie</div>
-                <div class="major__description">Flutter</div>
+                <h2 class="major__title">Moblie</h2>
+                <div class="major__description">Android<br>Flutter</div>
             </div>
-            <div class="about__jobs">
-                <div class="job1">
-                    <img src="imgs/jobs/ajou.png" alt="school logo" class="job_logo" width="100">
-                    <p class="job__name">아주대학교 / major : 디지털미디어학과 / plural major : 소프트웨어학과</p>
-                    <p class="job__period">2018.3 ~ 2024.8</p>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/ajou.png" alt="job logo" class="job_logo_1">
+                <div class="job_description">
+                    <p class="job__name">Ajou University, Digital-Media and Software</p>
+                    <p class="job__period">2018.3 ~ Until now</p>
                 </div>
-                <div class="job2">
-                    <img src="imgs/jobs/pixelro.png" alt="job logo" class="job_logo2" width="100">
-                    <p class="job__name">픽셀로 / 개발부 인턴</p>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/pixelro.png" alt="job logo" class="job_logo_2">
+                <div class="job_description">
+                    <p class="job__name">Pixelro Research Institute, Intern</p>
                     <p class="job__period">2023.1 ~ 2023.2</p>
                 </div>
             </div>
@@ -84,7 +83,7 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attritubes</h2>
         <p></p>
@@ -143,7 +142,7 @@
     </section>
 
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -155,29 +154,27 @@
 
         <!-- 사진에 마우스 대면 프로젝트 이름이, 클릭하면 Github 링크로 이동 -->
         <div class="work_projects">
-            <a
-                href=""
-                class="project"
-                target="_blank"
-            >
-            <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
-            <div class="project_description">
-                <h3>Example</h3>
-                <span>example</span>
-            </div>
+            <a href="" class="project" target="_blank">
+                <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
+                <div class="project_description">
+                    <h3>Example</h3>
+                    <span>example</span>
+                </div>
             </a>
         </div>
     </section>
 
     <!-- Testimonial -->
-    <section id="testimonial">
+    <section id="testimonial" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
             <div class="testimonial">
                 <img src="imgs/people1.jpg" alt="people1" class="testimonial__avatar">
                 <div class="testimonal__speech-bubble">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo veritatis ipsam, aliquam delectus quae fuga voluptates ullam soluta quia reiciendis aliquid, sit consectetur maiores laboriosam molestiae ab inventore illum! Earum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo veritatis ipsam, aliquam delectus
+                        quae fuga voluptates ullam soluta quia reiciendis aliquid, sit consectetur maiores laboriosam
+                        molestiae ab inventore illum! Earum.</p>
                     <p class="name">
                         <a href="">Mintae Kim</a> / Ajou University
                     </p>
@@ -186,7 +183,9 @@
             <div class="testimonial">
                 <img src="imgs/people1.jpg" alt="people1" class="testimonial__avatar">
                 <div class="testimonal__speech-bubble">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo veritatis ipsam, aliquam delectus quae fuga voluptates ullam soluta quia reiciendis aliquid, sit consectetur maiores laboriosam molestiae ab inventore illum! Earum.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo veritatis ipsam, aliquam delectus
+                        quae fuga voluptates ullam soluta quia reiciendis aliquid, sit consectetur maiores laboriosam
+                        molestiae ab inventore illum! Earum.</p>
                     <p class="name">
                         <a href="">Mintae Kim</a> / Ajou University
                     </p>
@@ -196,7 +195,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">rbwjrbxo@ajou.ac.kr</h2>
         <div class="contact_links">
@@ -206,4 +205,5 @@
         <p class="contact__rights">2023 GYUJEONG HAN - All rights reserved</p>
     </section>
 </body>
+
 </html>
