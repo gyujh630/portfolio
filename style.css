@@ -298,8 +298,8 @@ p {
 
 .skillset {
     display: flex;
-    background-color: #dedede;
     margin: 20px 0;
+    border-radius: 10%;
 }
 
 .skillset__title {
@@ -312,19 +312,26 @@ p {
     flex-basis: 60%;
     background-color: #bcbcbc;
     padding: 20px 40px 50px 40px;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
 }
 
 .skillset_right {
     flex-basis: 40%;
+    background-color: #dedede;
+    border-top-right-radius: 12%;
+    border-bottom-right-radius: 12%;
 }
 
 .tools {
     background-color: #d1d1d1;
     padding: 20px;
+    border-top-right-radius: 12%;
 }
 
 .etc {
     padding: 20px;
+    background-color: #dedede;
 }
 
 .skill_bar {
