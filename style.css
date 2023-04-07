@@ -119,8 +119,9 @@ p {
     font-weight: var(--weight-bold);
 }
 
-.navbar__logo {
+.navbar__logo img{
     transition: 300ms;
+    width: 120px;
 }
 
 .navbar__logo:hover {
@@ -171,8 +172,8 @@ p {
 .navbar__toggle-btn {
     position: absolute;
     right: 32px;
-    top: 50px;
-    font-size: 24px;
+    top: 35px;
+    font-size: 28px;
     color: var(--color-dark-grey);
     display: none;
 }
@@ -649,11 +650,11 @@ p {
         font-size: 17px;
     }
 
-    .home__title {
-
-    }
-
     h1 {
         font-size: 40px;
+    }
+
+    .navbar__logo img{
+        width: 80px;
     }
 }
