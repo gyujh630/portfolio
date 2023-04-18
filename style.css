@@ -122,7 +122,7 @@ p {
     background-color: transparent;
     align-items: center; 
     padding: 8px;
-    padding-top: 0px;
+
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -223,8 +223,6 @@ p {
 
 .navbar__toggle-btn {
     position: absolute;
-    right: 32px;
-    top: 35px;
     font-size: 28px;
     color: var(--color-dark-grey);
     display: none;
@@ -639,7 +637,7 @@ p {
         display: block; 
         position: fixed;
         top: 25px;
-        right: 25px;
+        right: 12px;
     }
 
     #navbar {
