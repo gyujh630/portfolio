@@ -146,14 +146,14 @@ p {
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         margin-right: 12px;
+        width: 110px;
+        padding: 4px 12px;
     }
     
     #navbar.navbar--down .navbar__menu__item{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
-
-
 
 .navbar__menu {
     display: flex;
