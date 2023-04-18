@@ -427,6 +427,7 @@ p {
     font-weight: 50;
     border-radius: 6px;
     font-size: var(--font-small);
+    color: #000000;
     padding: 8px 30px 8px 45px;
     margin-inline: 4px;
     transition: all var(--animation-duration) ease;
@@ -713,6 +714,8 @@ p {
 
     .category__btn {
         font-size: 14px;
+        padding: 3px;
+        margin: 1px;
     }
 
     #work {
