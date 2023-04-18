@@ -4,15 +4,17 @@
 
 const navbar = document.querySelector('#navbar');
 
-document.addEventListener('scroll', () => { //스크롤 될때 {}안의 코드 실행
+document.addEventListener('scroll', () => {
     const navbarHeight = navbar.getBoundingClientRect().height;
     if (window.scrollY > 160) {
         navbar.classList.add('navbar--down');
-
-    } else {
+    }
+    if(window.scrollY <= 160){
         navbar.classList.remove('navbar--down');
     }
 });
+
+
 
 //Navbar toggle button mobile screen
 const navbarTogglebtn = document.querySelector('.navbar__toggle-btn')
