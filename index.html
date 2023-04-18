@@ -174,60 +174,35 @@
         <h1>My Work</h1>
         <h3></h3>
         <div class="work__categories">
-            <button class="category__btn">All<span class="category__count">8</span></button>
-            <button class="category__btn">Front-end : Web Basic<span class="category__count">3</span></button>
-            <button class="category__btn">Front-end : React<span class="category__count">3</span></button>
-            <button class="category__btn">Front-end : example<span class="category__count">2</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class="category__count">3</span></button>
+            <button class="category__btn" data-filter="basic">Front-end : Web Basic<span class="category__count">2</span></button>
+            <button class="category__btn" data-filter="react">Front-end : React<span class="category__count">1</span></button>
         </div>
 
         <!-- 사진에 마우스 대면 프로젝트 이름이, 클릭하면 Github 링크로 이동 -->
         <div class="work_projects">
-            <a href="" class="project" target="_blank">
+            <a href="" class="project" target="_blank" data-type="basic">
                 <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
                 <div class="project_description">
                     <h3>Example</h3>
                     <div class="project_line"></div>
-                    <span>example</span>
+                    <span>basic</span>
                 </div>
             </a>
-            <a href="" class="project" target="_blank">
+            <a href="" class="project" target="_blank" data-type="basic">
                 <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
                 <div class="project_description">
                     <h3>Example</h3>
                     <div class="project_line"></div>
-                    <span>example</span>
+                    <span>basic</span>
                 </div>
             </a>
-            <a href="" class="project" target="_blank">
+            <a href="" class="project" target="_blank" data-type="react">
                 <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
                 <div class="project_description">
                     <h3>Example</h3>
                     <div class="project_line"></div>
-                    <span>example</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
-                <div class="project_description">
-                    <h3>Example</h3>
-                    <div class="project_line"></div>
-                    <span>example</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
-                <div class="project_description">
-                    <h3>Example</h3>
-                    <div class="project_line"></div>
-                    <span>example</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img class="project_img" src="imgs/projects/nav.png" alt="pr_img">
-                <div class="project_description">
-                    <h3>Example</h3>
-                    <div class="project_line"></div>
-                    <span>example</span>
+                    <span>react</span>
                 </div>
             </a>
         </div>
