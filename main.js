@@ -12,7 +12,7 @@ document.addEventListener('scroll', () => { //스크롤 될때 {}안의 코드 �
     else {
         navbar.classList.remove('navbar--down')
     }
-})
+});
 
 //Handle Scrolling when Tapping navbar menu
 //data-link 및 event listener 이용한 방법도 존재
@@ -32,4 +32,19 @@ document.addEventListener('scroll', () => { //스크롤 될때 {}안의 코드 �
     const fadePercent = (homeBottom / homeHeight) * 100;
 
     home.style.opacity = `${fadePercent}%`;
-})
+});
+
+
+//arrow
+const home2 = document.querySelector('#home')
+const arrow = document.querySelector('.arrow')
+document.addEventListener('scroll', () => {
+    const homeHeight = home2.getBoundingClientRect().height;
+    if(window.scrollY > homeHeight / 2) {
+        console.log(1)
+        arrow.classList.add('visible');
+    }
+    else{
+        arrow.classList.remove('visible');
+    }
+});
