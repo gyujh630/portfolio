@@ -14,11 +14,19 @@ document.addEventListener('scroll', () => { //스크롤 될때 {}안의 코드 �
     }
 });
 
+//Navbar toggle button mobile screen
+const navbarTogglebtn = document.querySelector('.navbar__toggle-btn')
+const navbarMenu = document.querySelector('.navbar__menu')
+navbarTogglebtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 //Handle Scrolling when Tapping navbar menu
 //data-link 및 event listener 이용한 방법도 존재
 function scrollToSection(sectionName) {
     var section = document.getElementById(sectionName);
     section.scrollIntoView({behavior: "smooth"});
+    navbarMenu.classList.remove('open');
 }
 
 //스크롤에 따른 home fade 효과
