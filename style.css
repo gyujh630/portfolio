@@ -587,8 +587,9 @@ p {
 /* For below 1080px screen width */
 @media screen and (max-width: 1080px) {
   .category__btn {
-    padding: 6px;
+    padding: 8px;
     margin: 3px;
+    width: 70px;
     font-size: var(--font-small);
     position: relative;
   }
@@ -676,10 +677,10 @@ p {
   }
 
   .category__btn {
-    font-size: 14px;
-    padding: 3px;
-    margin: 1px;
-    margin-bottom: 12px;
+    font-size: 15px;
+    padding: 8px;
+    width: 60px;
+    margin: 15px 3px;
   }
 
   #work {
